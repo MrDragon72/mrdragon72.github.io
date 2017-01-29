@@ -1,0 +1,44 @@
+body
+{
+	background: gray;
+	color: white
+}
+
+a:active
+{
+    background-color: #FFCC66;
+}
+
+a:focus
+{
+    background-color: #FFCC66;
+}
+
+a:visited
+{
+    color: #AAA;
+}
+
+h1
+{
+	color: white;
+	font-style: italic;
+	text-align: center;
+	font-size: 100px;
+}
+
+h2
+{
+	color: white;
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+}
+
+p
+{
+	color: white;
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+}
