@@ -44,19 +44,20 @@
 			<span class="blue-text text-darken-2">Etape 3: Dans le fichier qu'on vien de créé, ajoutez ce code ci-dessous:</span>
 		</div>
 	<p>var Discord = require("discord.js");<br />
-	var client = new Discord.Client();
+	<p>var client = new Discord.Client();<br />
 	    
-	client.on("ready", () => {
-	    console.log("Le bot est en ligne !");
-	});
+	<p>client.on("ready", () => {<br />
+	    <p>console.log("Le bot est en ligne !");<br />
+	<p>});<br />
 	    
-	client.on("message", (message) => {
-	    if (message.content.startsWith("ping")) {
-	    	message.channel.sendMessage("Pong !");
-	    }
-		});
+	<p>client.on("message", (message) => {<br />
+	    <p>if (message.content.startsWith("ping")) {<br />
+	    	<p>message.channel.sendMessage("Pong !");<br />
+	    <p>}<br />
+		<p>});<br />
 	    
-	client.login("token");</br></p>
+	<p>client.login("token");<br />
+	</br></p>
 	<div class="card-panel">
 			<span class="blue-text text-darken-2">Etape 4: Après avoir entrer ce code dans le fichier, remplacez "token" par le Token où vous avez créer votre Bot.</span>
 		</div>
