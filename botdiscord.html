@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Soren1Know - Sites webs</title>
+  <title>Soren1Know - Bot Discord</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -32,10 +32,33 @@
       <br><br>
       <h1 class="header center orange-text">Créer un Bot Discord en JavaScript</h1>
         <div class="card-panel">
-			<span class="blue-text text-darken-2">Salut mon jeune ami ! Tu veux créer un Bot Discord ? Alors tu es sur la bonne page du site web !</span>
+			<span class="blue-text text-darken-2">Etape 0: Salut mon jeune ami ! Tu veux créer un Bot Discord ? Alors tu es sur la bonne page du site web !</span>
 		</div>
 	<div class="card-panel">
-			<span class="blue-text text-darken-2">Pour commencer, nous allons créer un Bot sur cette page: https://discordapp.com/developers/applications/me. Cliquez sur "Create Application" puis complètez la forme. Ensuite, cliquez sur "Create a Bot User" et "Yes, do it!".</span>
+			<span class="blue-text text-darken-2">Etape 1: Pour commencer, nous allons créer un Bot sur cette page: https://discordapp.com/developers/applications/me. Cliquez sur "Create Application" puis complètez la forme. Ensuite, cliquez sur "Create a Bot User" et "Yes, do it!".</span>
+		</div>
+	<div class="card-panel">
+			<span class="blue-text text-darken-2">Etape 2: Après cela, créer un dossier sur votre Bureau et, dans votre dossier, créer un fichier avec l'extension .js (exemple: bot.js).</span>
+		</div>
+	<div class="card-panel">
+			<span class="blue-text text-darken-2">Etape 3: Dans le fichier qu'on vien de créé, ajoutez ce code ci-dessous:</span>
+		</div>
+	var Discord = require("discord.js");
+	var client = new Discord.Client();
+	    
+	client.on("ready", () => {
+	    console.log("Le bot est en ligne !");
+	});
+	    
+	client.on("message", (message) => {
+	    if (message.content.startsWith("ping")) {
+	    	message.channel.sendMessage("Pong !");
+	    }
+	});
+	    
+	client.login("token");
+	<div class="card-panel">
+			<span class="blue-text text-darken-2">Etape 4: Après avoir entrer ce code dans le fichier, remplacez "token" par le Token où vous avez créer votre Bot.</span>
 		</div>
       <br><br>
 
